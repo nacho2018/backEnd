@@ -6,14 +6,26 @@ export default class DataService {
 
     private account: String = process.env.ACCOUNT;
 
+    /**
+     * Gets the list of managers
+     * @returns 
+     */
     public getManagers(): Employee[] {
         return this.sortByPossition(WorkingPossition.MANAGER);
     }
 
+    /**
+     * 
+     * @returns Gets the list of enginners
+     */
     public getEngineers(): Employee[] {
         return this.sortByPossition(WorkingPossition.ENGINNER);
     }
 
+    /**
+     * Gets the list of employees
+     * @returns 
+     */
     public getExperts(): Employee[] {
         return this.sortByPossition(WorkingPossition.EXPERT);
     }
