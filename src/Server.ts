@@ -4,6 +4,7 @@ import DataService from './DataService';
 
 export default class Server {
 
+    //these are the attributes
     private incomingMessage: http.IncomingMessage;
     private serverResponse: http.ServerResponse
     private dataService: DataService;
@@ -15,6 +16,9 @@ export default class Server {
         this.dataService = new DataService();
     }
 
+    /**
+     * Creates a new server
+     */
     public createServer() {
         http.createServer((req, res) => {
             this.incomingMessage = req;
@@ -23,6 +27,9 @@ export default class Server {
         }).listen(8080);
     }
 
+    /**
+     * Listens to the requests and check responses
+     */
     private respond() {
         const url = this.incomingMessage.url;
         switch (url) {
