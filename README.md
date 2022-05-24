@@ -1,5 +1,6 @@
 # EmplManagerBackEnd
 
+
 This is a useful new branch for a new feature.
 
 Simple NodeJs backend service for retrieving employees by possition.
@@ -28,3 +29,6 @@ the project reuires npm and NodeJs installed.
 | All employees | http://localhost:8080/allemployees |
 | Juniors       | http://localhost:8080/juniors      |
 | Programmers   | http://localhost:8080/programmers  |
+=======
+This branch solves a critical issue.
+
